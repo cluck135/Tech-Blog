@@ -52,7 +52,6 @@ router.post('/login', async (req, res) => {
 
     // Create session variables based on the logged in user
     req.session.save(() => {
-      req.session.signed_up = true;
       req.session.user_id = userData.id;
       req.session.logged_in = true;
     res.json({ user: userData, message: 'You are now logged in!' });
@@ -70,7 +69,6 @@ router.post('/add', async (req, res) => {
 
       console.log("here" + user);////Try to figure out why on first signup multiple accounts are created instead of one, maybe a bug
       req.session.save(() => {
-        req.session.signed_up = true;
         req.session.user_id = user.id;
         req.session.logged_in = true;
       res.json({ user: user, message: 'You are now signed up!' });

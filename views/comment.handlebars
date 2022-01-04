@@ -1,6 +1,6 @@
  
 <div class="post-comment"></div>
-<h3>{{comment.content}} by {{comment.user.name}} on {{comment.createdAt}}</h3>
+<h3>{{comment.content}} by {{comment.user.name}} on {{formatDate comment.createdAt}}</h3>
 </div>
 {{!-- add section for updating comment only if the current logged in user's id is the same as the user id of the comment --}}
 <script src="/js/comment.js"></script>

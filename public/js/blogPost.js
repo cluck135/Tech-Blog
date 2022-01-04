@@ -21,13 +21,12 @@ const addCommentHandler = async (event) => {
 
   // Gather the data from the form elements on the page
   const content = document.querySelector('#comment-content').value.trim();
-  const user_id = document.querySelector('.blog-post').dataset.id;
   const post_id = document.querySelector('.comment-form').dataset.id;
-  if ( content && post_id && user_id ) {
+  if ( content && post_id ) {
     // Send the e-mail and password to the server
     const response = await fetch('/api/comments/add', {
       method: 'POST',
-      body: JSON.stringify({ content, post_id, user_id }),
+      body: JSON.stringify({ content, post_id }),
       headers: { 'Content-Type': 'application/json' },
     });
 

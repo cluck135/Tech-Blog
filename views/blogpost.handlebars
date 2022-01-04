@@ -1,14 +1,17 @@
 <div class="row align-center mb-5">
   <div class="col-md-6 blog-post" data-id={{post.user_id}}>
       <h2>{{post.title}}</h2>
-      <h3>made by {{post.user.name}} on {{post.createdAt}}</h3>
+      <h3>made by {{post.user.name}} on {{formatDate post.createdAt}}</h3>
       <h3>{{post.content}}</h3>
   </div>
-  {{#each post.comments as |comment|}}
-  <div class="post-comment" data-id={{comment.id}}>
-    <h3>{{comment.content}} by {{comment.user.name}} on {{comment.createdAt}}</h3>
-  </div>
-  {{/each}}
+</div>
+<h2>Comments:</h2>
+{{#each post.comments as |comment|}}
+<div class="col-md-6 post-comment" data-id={{comment.id}}>
+  <h3>{{comment.content}} by {{comment.user.name}} on {{formatDate comment.createdAt}}</h3>
+</div>
+{{/each}}
+
 <form class="form comment-form" data-id={{post.id}}>
   <div class="form-group">
     <label for="comment-content">Comment:</label>

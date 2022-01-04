@@ -1,8 +1,8 @@
   {{#each posts as |post|}}
   <div class="updatePost" data-id={{post.id}}>
-    <h3>{{post.title}} created on {{post.createdAt}}</h3>
+    <h3>{{post.title}} created on {{formatDate post.createdAt}}</h3>
   </div>
   {{/each}}
-  <button class="btn button-info newPost">new post</button>
+  <button class="btn-primary newPost">new post</button>
 </div>
 <script src="/js/dashboard.js"></script>
