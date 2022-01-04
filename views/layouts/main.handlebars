@@ -10,17 +10,34 @@
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
-      <button class="home">Home</button>
-      <button class="dash">Dashboard</button>
-      <button class="login">Login</button>
-      <button class="logout">Logout</button>
+    <h1>
+      Tech Blog 
+    </h1>
+    <ul>
+        <nav>
+          <li><button class="btn" id="home">Home</button></li>
+          <li><button class="btn" id="dashboard" >Dashboard</button></li>
+          {{#if logged_in}}
+          <li><button class="btn" id="logout">Logout</button></li>
+          {{else}}
+          <li><button class="btn" id="login">Login</button></li>
+          {{/if}}
+        </nav>
+    </ul>
+  
   </header>
-  <main class="container container-fluid mt-5">
+  <main class="container container-fluid">
     {{{ body }}}
   </main>
   <footer>
-      
   </footer>
+  <!-- Only display the logout button if the user is logged in -->
+  <!-- Only include the logout script if the user is logged in -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{else}}
+  <script src="/js/loginButton.js"></script>
+  {{/if}}
+  <script src="/js/main.js"></script>
 </body>
-
 </html>

@@ -1,10 +1,13 @@
-{{#each users as |user|}}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{user.name}} test</h2>
-  </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:test@gmail.com">{{user.email}} em</a></h3>
-  </div>
-</div>
+{{#each users as |user| }}
+  {{#each user.posts as |post|}}
+    {{#if (checkPost post)}}
+    <div class="row align-center mb-5 blog-post" data-id={{post.id}}>
+      <div class="col-md-6">
+        <h2>{{post.title}}</h2>
+        <h3>made on {{post.createdAt}}</h3>
+      </div>
+    </div>
+    {{/if}}
+  {{/each}}
 {{/each}}
+  <script src="/js/homePost.js"></script>

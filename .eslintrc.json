@@ -1,9 +1,11 @@
 {
+  // Prevent ESLint from looking at parent directories
   "root": true,
   "env": {
     "browser": true,
     "commonjs": true,
     "node": true,
+    // Add support for ES6 features
     "es6": true
   },
   "rules": {
@@ -27,8 +29,7 @@
     "no-redeclare": "error",
     "brace-style": "error",
     "indent": ["error", 2],
-    "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "double"],
+    "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "radix": "off"
   }
