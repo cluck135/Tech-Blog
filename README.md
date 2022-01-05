@@ -42,5 +42,8 @@ My Github Profile: [cluck135](https://github.com/cluck135)
 
 Email me your questions at: [casenluck@gmail.com](mailto:casenluck@gmail.com)
 
-## Video
-deployed project: [Video](https://protected-bayou-19052.herokuapp.com/)
+## Project Links/Screenshot
+Screenshots below!
+![Image of website](./img/website.PNG)
+
+deployed project: [heroku application](https://protected-bayou-19052.herokuapp.com/)
