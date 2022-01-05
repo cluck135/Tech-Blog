@@ -1,10 +1,11 @@
 {{#each users as |user| }}
   {{#each user.posts as |post|}}
     {{#if (checkPost post)}}
-    <div class="row align-center mb-5 blog-post" data-id={{post.id}}>
-      <div class="col-md-6">
-        <h2>{{post.title}}</h2>
-        <h3>made on {{formatDate post.createdAt}}</h3>
+
+    <div class="row card align-center mb-5 blog-post" data-id={{post.id}}>
+      <div class="card-body col-md-6">
+        <h2 class="card-title">{{post.title}}</h2>
+        <h3 class="card-text">made on {{formatDate post.createdAt}}</h3>
       </div>
     </div>
     {{/if}}

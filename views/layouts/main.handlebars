@@ -15,12 +15,12 @@
     </h1>
     <ul>
         <nav>
-          <li><button class="btn-info" id="home">Home</button></li>
-          <li><button class="btn-info" id="dashboard" >Dashboard</button></li>
+          <li style="margin: 5px;"><button class="btn btn-info" id="home">Home</button></li>
+          <li style="margin: 5px;"><button class="btn btn-info" id="dashboard" >Dashboard</button></li>
           {{#if logged_in}}
-          <li><button class="btn-danger" id="logout">Logout</button></li>
+          <li style="margin: 5px;"><button class="btn btn-danger" id="logout">Logout</button></li>
           {{else}}
-          <li><button class="btn-primary" id="login">Login</button></li>
+          <li style="margin: 5px;"><button class="btn btn-primary" id="login">Login</button></li>
           {{/if}}
         </nav>
     </ul>
