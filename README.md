@@ -18,6 +18,7 @@ Your task this week is to build a CMS-style blog site similar to a Wordpress sit
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
 - [Questions](#questions)
+- [Application](#project)
 
 ## Installation Instructions
 ```
@@ -43,7 +44,7 @@ My Github Profile: [cluck135](https://github.com/cluck135)
 
 Email me your questions at: [casenluck@gmail.com](mailto:casenluck@gmail.com)
 
-## Project Links/Screenshot
+## Project
 ![Image of website](./img/website.PNG)
 
 deployed project: [heroku application](https://protected-bayou-19052.herokuapp.com/)
