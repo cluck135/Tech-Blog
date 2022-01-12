@@ -14,7 +14,6 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
 - [Questions](#questions)
-- [Video](#video)
 
 ## Installation Instructions
 ```
@@ -30,9 +29,7 @@ npm start
 Open Source
 
 ## Test Instructions
-```
-npm start
-```
+N/A
 
 ## License
 This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license
@@ -43,7 +40,6 @@ My Github Profile: [cluck135](https://github.com/cluck135)
 Email me your questions at: [casenluck@gmail.com](mailto:casenluck@gmail.com)
 
 ## Project Links/Screenshot
-Screenshot below!
 ![Image of website](./img/website.PNG)
 
 deployed project: [heroku application](https://protected-bayou-19052.herokuapp.com/)
