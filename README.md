@@ -47,4 +47,4 @@ Email me your questions at: [casenluck@gmail.com](mailto:casenluck@gmail.com)
 ## Project
 ![Image of website](./img/website.PNG)
 
-deployed project: [heroku application](https://protected-bayou-19052.herokuapp.com/)
+deployed project: [heroku application](https://tech-blog-mvc-casen.herokuapp.com/)
