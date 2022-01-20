@@ -17,7 +17,7 @@ const signupFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/');
       } else {
-        alert('Failed to signup in');
+        alert('Failed to signup, make sure to enter more than 7 characters for password');
       }
     }
   };

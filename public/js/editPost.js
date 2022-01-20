@@ -40,8 +40,8 @@ const updatePostFormHandler = async (event) => {
   }
 
   document
-  .querySelector('.update-post-form')
-  .addEventListener('submit', updatePostFormHandler);
+  .querySelector('.updatePost')
+  .addEventListener('click', updatePostFormHandler);
 
   document
   .querySelector('.delete-post')

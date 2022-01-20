@@ -1,28 +1,29 @@
 <div class="row align-center mb-5">
-  <div class="card col-md-6 blog-post" data-id={{post.user_id}}>
+  <div class="card col-md-6 blog-post p-0" data-id={{post.user_id}}>
       <h2 class="card-header">{{post.title}}</h2>
-      <div class="card-text">
-      <h3 >made by {{post.user.name}} on {{formatDate post.createdAt}}</h3>
-      <h3>{{post.content}}</h3>
+      <div class="list-group-item">
+        <h3 >made by {{post.user.name}} on {{formatDate post.createdAt}}</h3>
+        <h3>{{post.content}}</h3>
       </div>
   </div>
 </div>
 <div class="card col-md-6">
 <h2 class="card-header">Comments:</h2>
 {{#each post.comments as |comment|}}
-<div class="list-group post-comment" data-id={{comment.id}}>
+<div class=" post-comment" data-id={{comment.id}}>
   <h3 class="list-group-item">{{comment.content}} by {{comment.user.name}} on {{formatDate comment.createdAt}}</h3>
 </div>
 {{/each}}
-</div>
 <form class="form comment-form" data-id={{post.id}}>
-  <div class="form-group">
+  <div class="form-group m-3">
     <label for="comment-content">Comment:</label>
     <input class="form-input" type="text" id="comment-content"/>
   </div>
-  <div class="form-group">
+  <div class="form-group m-3">
     <button class="btn btn-info add-comment">add comment</button>
   </div>
 </form>
+</div>
+
 </div>
 <script src="/js/blogPost.js"></script>
